@@ -1,8 +1,8 @@
 package com.coursework.demo.entity;
 
+import com.coursework.demo.entity.enums.TimeType;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.hibernate.type.TimeType;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
