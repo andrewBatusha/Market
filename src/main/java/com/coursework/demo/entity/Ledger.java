@@ -34,5 +34,5 @@ public class Ledger implements Serializable {
 
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "good_id")
-    private Good good;
+    private Product product;
 }

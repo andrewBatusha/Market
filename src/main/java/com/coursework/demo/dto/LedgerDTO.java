@@ -1,6 +1,6 @@
 package com.coursework.demo.dto;
 
-import com.coursework.demo.entity.Good;
+import com.coursework.demo.entity.Product;
 import com.coursework.demo.entity.enums.Bookkeeping;
 import lombok.Data;
 
@@ -14,6 +14,6 @@ public class LedgerDTO {
 
     private Bookkeeping bookkeeping;
 
-    private Good good;
+    private Product product;
 
 }

@@ -1,20 +1,24 @@
 package com.coursework.demo.dto;
 
 import com.coursework.demo.entity.Building;
+import com.coursework.demo.entity.Producer;
 import lombok.Data;
-import org.hibernate.type.TimeType;
 
 @Data
-public class SellerDTO {
+public class ProductDTO {
+
     private long id;
 
     private String name;
 
-    private String surname;
+    private long price;
 
-    private String patronymic;
+    private long weight;
 
-    private TimeType timeType;
+    private long quantity;
+
+    private Producer producer;
 
     private Building building;
+
 }

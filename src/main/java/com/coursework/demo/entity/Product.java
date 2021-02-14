@@ -15,8 +15,8 @@ import java.io.Serializable;
 @Entity
 @Data
 @NoArgsConstructor
-@Table(name = "owers")
-public class Ower implements Serializable {
+@Table(name = "products")
+public class Product implements Serializable {
 
     @Id
     @GeneratedValue
@@ -24,12 +24,16 @@ public class Ower implements Serializable {
 
     private String name;
 
-    private long bunkNumber;
+    private long price;
 
-    private long owe;
+    private long weight;
 
+    private long quantity;
 
     @ManyToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name = "seller_id")
-    private Seller seller;
+    private Producer producer;
+
+    @ManyToOne(fetch = FetchType.EAGER)
+    @JoinColumn(name = "building_id")
+    private Building building;
 }

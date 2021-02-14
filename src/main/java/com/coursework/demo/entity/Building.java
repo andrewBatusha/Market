@@ -12,17 +12,15 @@ import java.io.Serializable;
 @Entity
 @Data
 @NoArgsConstructor
-@Table(name = "providers")
-public class Provider implements Serializable {
+@Table(name = "buildings")
+public class Building implements Serializable {
+
     @Id
     @GeneratedValue
     private long id;
 
     private String name;
 
-    private String phoneNumber;
+    private String geolocation;
 
-    private int weight;
-
-    private String card;
 }

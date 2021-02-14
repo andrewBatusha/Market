@@ -4,6 +4,7 @@ import com.coursework.demo.entity.Seller;
 import com.coursework.demo.repository.SellerRepository;
 import com.coursework.demo.service.SellerService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
@@ -26,8 +27,8 @@ public class SellerServiceImpl implements SellerService {
     }
 
     @Override
-    public List<Seller> getAll() {
-        return (List<Seller>) sellerRepository.findAll();
+    public List<Seller> getAll(Pageable pageable) {
+        return sellerRepository.findAll(pageable).getContent();
     }
 
     @Override

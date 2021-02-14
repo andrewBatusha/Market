@@ -4,6 +4,7 @@ import com.coursework.demo.entity.Ledger;
 import com.coursework.demo.repository.LedgerRepository;
 import com.coursework.demo.service.LedgerService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
@@ -26,8 +27,8 @@ public class LedgerServiceImpl implements LedgerService {
     }
 
     @Override
-    public List<Ledger> getAll() {
-        return (List<Ledger>) ledgerRepository.findAll();
+    public List<Ledger> getAll(Pageable pageable) {
+        return ledgerRepository.findAll(pageable).getContent();
     }
 
     @Override

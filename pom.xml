@@ -12,8 +12,8 @@
 	<artifactId>demo</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
-	<name>Prison</name>
-	<description>Prison course work</description>
+	<name>Market</name>
+	<description>Market course work</description>
 
 	<properties>
 		<java.version>1.8</java.version>

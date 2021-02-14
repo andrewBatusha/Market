@@ -3,15 +3,11 @@ package com.coursework.demo.dto;
 import lombok.Data;
 
 @Data
-public class ProviderDTO {
-
+public class BuildingDTO {
     private long id;
 
     private String name;
 
-    private String phoneNumber;
+    private String geolocation;
 
-    private int weight;
-
-    private String card;
 }
