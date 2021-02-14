@@ -1,8 +1,8 @@
 package com.coursework.demo.dto;
 
 import com.coursework.demo.entity.Building;
+import com.coursework.demo.entity.enums.TimeType;
 import lombok.Data;
-import org.hibernate.type.TimeType;
 
 @Data
 public class SellerDTO {
