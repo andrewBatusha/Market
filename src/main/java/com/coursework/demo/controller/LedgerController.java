@@ -74,6 +74,6 @@ public class LedgerController {
     public ResponseEntity delete(@PathVariable("id") long id) {
         Ledger ledger = ledgerService.getById(id);
         ledgerService.delete(ledger);
-        return ResponseEntity.status(HttpStatus.OK).build();
+        return ResponseEntity.status(HttpStatus.NO_CONTENT).build();
     }
 }

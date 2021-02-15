@@ -74,6 +74,6 @@ public class SellerController {
     public ResponseEntity delete(@PathVariable("id") long id) {
         Seller seller = sellerService.getById(id);
         sellerService.delete(seller);
-        return ResponseEntity.status(HttpStatus.OK).build();
+        return ResponseEntity.status(HttpStatus.NO_CONTENT).build();
     }
 }

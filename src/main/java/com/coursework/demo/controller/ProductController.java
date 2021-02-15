@@ -74,6 +74,6 @@ public class ProductController {
     public ResponseEntity delete(@PathVariable("id") long id) {
         Product product = productService.getById(id);
         productService.delete(product);
-        return ResponseEntity.status(HttpStatus.OK).build();
+        return ResponseEntity.status(HttpStatus.NO_CONTENT).build();
     }
 }

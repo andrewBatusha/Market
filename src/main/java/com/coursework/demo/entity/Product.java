@@ -31,10 +31,10 @@ public class Product implements Serializable {
 
     private long quantity;
 
-    @ManyToOne(fetch = FetchType.EAGER)
+    @ManyToOne
     private Producer producer;
 
-    @ManyToOne(fetch = FetchType.EAGER)
+    @ManyToOne
     @JoinColumn(name = "building_id")
     private Building building;
 }

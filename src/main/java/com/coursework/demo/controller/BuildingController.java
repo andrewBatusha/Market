@@ -75,6 +75,6 @@ public class BuildingController {
     public ResponseEntity delete(@PathVariable("id") long id) {
         Building building = buildingService.getById(id);
         buildingService.delete(building);
-        return ResponseEntity.status(HttpStatus.OK).build();
+        return ResponseEntity.status(HttpStatus.NO_CONTENT).build();
     }
 }

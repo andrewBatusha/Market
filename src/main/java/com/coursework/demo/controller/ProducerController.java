@@ -75,6 +75,6 @@ public class ProducerController {
     public ResponseEntity delete(@PathVariable("id") long id) {
         Producer producer = producerService.getById(id);
         producerService.delete(producer);
-        return ResponseEntity.status(HttpStatus.OK).build();
+        return ResponseEntity.status(HttpStatus.NO_CONTENT).build();
     }
 }
