@@ -32,6 +32,7 @@ public class Product implements Serializable {
     private long quantity;
 
     @ManyToOne
+    @JoinColumn(name = "producer_id")
     private Producer producer;
 
     @ManyToOne
