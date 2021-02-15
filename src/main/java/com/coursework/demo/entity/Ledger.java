@@ -33,7 +33,7 @@ public class Ledger implements Serializable {
     @Enumerated(EnumType.STRING)
     private Bookkeeping bookkeeping;
 
-    @ManyToOne(fetch = FetchType.EAGER)
+    @ManyToOne
     @JoinColumn(name = "good_id")
     private Product product;
 }

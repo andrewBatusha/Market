@@ -39,7 +39,7 @@ public class Seller implements Serializable {
     @Enumerated(EnumType.STRING)
     private TimeType timeType;
 
-    @ManyToOne(fetch = FetchType.EAGER)
+    @ManyToOne
     @JoinColumn(name = "building_id")
     private Building building;
 
